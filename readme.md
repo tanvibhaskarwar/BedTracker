@@ -12,5 +12,11 @@ Tech Stack:
 Backend : Node.js version:
 Frontend: React.js
 
+Prerequisites:
+-react
+-Node npm
+-MySQL
+
+
 
 
