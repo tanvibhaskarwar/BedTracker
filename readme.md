@@ -8,15 +8,16 @@ Supports following features:
 3. Get a list of testing centres around you.
 4. Check availability of Quarantine Facilties around you.
 
-Tech Stack:
-Backend : Node.js version:
-Frontend: React.js
+Tech Stack :
+Backend : Node.js.
+Frontend: React.js.
 
 Prerequisites:
--react
--Node npm
--MySQL
+1.react
+2.Node npm
+3.MySQL
 
-
-
+Starting the project:
+From Frontend diretory:npm start
+From Backend directory: node server.js
 
