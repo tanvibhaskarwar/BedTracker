@@ -1,0 +1,13 @@
+delimiter $$
+create procedure signup(IN email1 varchar(25), IN password1 varchar(100))
+begin
+declare ret varchar(25);
+if exists (select * from user1 where email=email1)  then
+	set ret='Email already registered';
+else
+	insert into user1 values(NULL,email1,password1);
+	set ret='User Created';
+end if;
+select ret;
+end $$
+delimiter ;

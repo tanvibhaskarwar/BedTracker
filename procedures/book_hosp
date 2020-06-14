@@ -1,0 +1,27 @@
+delimiter $$
+create procedure BookHosp(IN hid1 int, IN uid1 int, IN tid1 int)
+begin
+declare ret varchar(25);
+if exists (select * from hospital where hid = hid1)  then
+if exists( select * from Tests where testId = tid1 and userId = uid1 and result = 'positive') then
+insert into hospital_bookings values(NULL,uid1,hid1,NULL);
+set ret = 'Bed Booked';
+update hospital set vacant =vacant-1 where hid=hid1;
+update Tests set result = 'p bb';
+else
+set ret = 'Invalid Test Result';
+end if; 
+else
+set ret = 'Invalid Hospital';
+end if;
+select ret;
+end $$
+delimiter ;
+
+
+
+
+
+
+
+

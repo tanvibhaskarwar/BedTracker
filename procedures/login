@@ -1,0 +1,19 @@
+drop procedure login;
+delimiter $$
+create procedure login(IN email1 varchar(25), IN password1 varchar(100),INOUT id1 int)
+begin
+declare ret varchar(25);
+if exists (select * from user1 where email=email1)  then
+if exists( select * from user1 where email=email1 and password=password1) then
+set ret = 'Logged in';
+select id into id1 from user1 where email=email1 and password=password1;
+else
+set id1 = -1;
+end if; 
+else
+set id1=-2;
+end if;
+
+select id1 as abc;
+end $$
+delimiter ;

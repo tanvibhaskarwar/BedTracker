@@ -1,0 +1,17 @@
+delimiter $$
+create procedure BookTest( IN tcid int, IN uid int, IN rid int, INOUT ret int)
+begin
+if exists (select * from TestingCentre where testingCentreId = tcid and kitsAvailable > 0)  then
+if exists( select * from Referals where referalId = rid and userId = uid and status = 'Not tested') then
+insert into Tests values(NULL,uid,tcid,'Test Booked');
+set ret = 1;
+update Referals set status = 'Referal used' where referalId = rid;
+update TestingCentre set kitsAvailable = kitsAvailable - 1 where testingCentreId = tcid;
+else
+set ret = 0;
+end if; 
+else
+set ret = 0;
+end if;
+end $$
+delimiter ;

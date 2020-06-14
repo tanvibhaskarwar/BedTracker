@@ -1,0 +1,20 @@
+delimiter $$
+create procedure BookQuar( IN qid int, IN uid int, IN tid int)
+begin
+declare ret varchar(23);
+if exists (select * from quarantine where id = qid)  then
+if exists(select * from Tests where testId = tid and userId = uid and result = 'positive') then
+insert into quar_bookings values(NULL,uid,qid);
+set ret = 'Facility Booked';
+update quarantine set capacity=capacity-1,occupied=occupied+1 where id = qid;
+update Tests set result = 'p,quar b' where testId = tid;
+else
+set ret = 'Invalid Test result';
+end if; 
+else
+set ret = 'Invalid quarantine facilty';
+end if;
+
+select ret;
+end $$
+delimiter ;

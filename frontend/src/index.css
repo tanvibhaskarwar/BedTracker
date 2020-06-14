@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 	background: #ffffff !important;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  /*font-family: 'Fira Sans', sans-serif;*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.box {
+  height: 450px;
+  width: 450px;
+  background-color: #4682B4;
+  float: right;
+  padding-left: 40px;
+}
+
+.box2 {
+  height: 450px;
+  width: 450px;
+  background-color: #4682B4;
+  float: left;
+  padding-left: 40px;
+}
+
+.box3 {
+  height: 400px;
+  width: 707px;
+  background-color: #0000CD;
+  position: absolute;
+  left: 31%;
+  top: 20%;
+}
+
+.circle {
+  height: 400px;
+  width: 400px;
+  background-color: #0000CD;
+  border-radius: 50%;
+}
+
+.pads{
+	padding-right: 40px;
+}
+
+.pads1{
+	padding-left: 50px;
+}
+
+.container {
+	 text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 500px;
+}
+
+.container2 {
+	 text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 500px;
+}
+
+.fever-box {
+  display: inline-block;
+  height: 250px;
+  width: 230px;
+  background-color: #4682B4;
+  padding-left: 40px;
+}
+
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #000000
+}
+
+body,  html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  height: 880px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  height: 400px;
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  background: 'transparent';
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 25px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-inner1 {
+  height: 540px;
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  background: 'transparent';
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 25px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #ffffff;
+}
+
+.placeholder{
+overflow: visible;
+}
+
+input[type="age"]{
+    width: 50px;
+  }
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.form-control {
+  width: 400px;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+.button {
+  background-color: #0000CD;
+  border: none;
+  color: white;
+  padding: 15px 180px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.header {
+  font-size: 30px;
+}
+
+.titles {
+  padding-bottom: 8px;
+}
