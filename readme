@@ -1,11 +1,11 @@
-Bed Tracker
+###Bed Tracker
 
-Supports following features:
+##Supports following features:
 1. Get real-time data of bed availability across multiple hospitals.
 2. Book your bed.
 3. Get a list of testing centres around you.
 4. Check availability of Quarantine Facilties around you.
 
-Tech Stack:
-Backend : Node.js version:
-Frontend: React.js
+##Tech Stack:
+#Backend : Node.js version:
+#Frontend: React.js
