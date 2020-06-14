@@ -1,4 +1,6 @@
-Bed Tracker
+##Bed Tracker
+
+An online platform to get realtime update of availability of beds in hospitals and covid care centres around you.
 
 Supports following features:
 1. Get real-time data of bed availability across multiple hospitals.
@@ -9,3 +11,7 @@ Supports following features:
 Tech Stack:
 Backend : Node.js version:
 Frontend: React.js
+
+
+
+
