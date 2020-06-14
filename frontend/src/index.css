@@ -23,15 +23,16 @@ code {
   width: 450px;
   background-color: #4682B4;
   float: right;
-  padding-left: 40px;
+  padding-left: 25px;
+  padding-top: 10px;
 }
 
 .box2 {
   height: 450px;
   width: 450px;
   background-color: #4682B4;
-  float: left;
-  padding-left: 40px;
+ float: left;
+  padding-left: 10px;
 }
 
 .box3 {
@@ -55,14 +56,20 @@ code {
 }
 
 .pads1{
-	padding-left: 50px;
+	left: 10px;
 }
 
 .container {
-	 text-align: center;
+  height: 00px;
+  width: 1000px;
+  text-align: center;
   margin: 0;
-  line-height: 1;
+  line-height: 2;
   padding-bottom: 500px;
+   padding-top: 500px;
+    padding-left: 500px;
+     padding-right: 500px;
+  
 }
 
 .container2 {
@@ -75,7 +82,7 @@ code {
 .fever-box {
   display: inline-block;
   height: 250px;
-  width: 230px;
+  width: 267px;
   background-color: #4682B4;
   padding-left: 40px;
 }
@@ -107,25 +114,25 @@ body,  html, .App, #root, .auth-wrapper {
 }
 
 .auth-inner {
-  height: 400px;
+  height: 510px;
   width: 450px;
   margin: auto;
   background: #ffffff;
   background: 'transparent';
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 25px 45px 55px;
+  padding: 30px 25px 35px 35px;
   border-radius: 15px;
   transition: all .3s;
 }
 
 .auth-inner1 {
-  height: 540px;
+  height: 690px;
   width: 450px;
   margin: auto;
   background: #ffffff;
   background: 'transparent';
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 25px 45px 55px;
+  padding: 40px 25px 45px 35px;
   border-radius: 15px;
   transition: all .3s;
 }
@@ -174,18 +181,18 @@ input::-webkit-input-placeholder {
 }
 
 .form-control {
-  width: 400px;
+  width: 300px;
 }
 
 .form-group {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .button {
   background-color: #0000CD;
   border: none;
   color: white;
-  padding: 15px 180px;
+  padding: 15px 165px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

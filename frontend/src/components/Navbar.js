@@ -81,22 +81,22 @@ export default function SimpleTabs() {
               <MenuIcon />
             </IconButton>
             <Tabs value={value} onChange={handleChange}>
-              <Tab label="Login" {...a11yProps(0)} />
+              <Tab label="HomePage" {...a11yProps(0)} />
               <Tab label="Sign Up" {...a11yProps(1)} />
-              <Tab label="HomePage" {...a11yProps(2)} />
+              <Tab label="Login" {...a11yProps(2)} />
               <Tab label="Hospitals" {...a11yProps(3)} />
               <Tab label="Testing Centres" {...a11yProps(4)} />
               <Tab label="Quarantine Facilities" {...a11yProps(5)} />
             </Tabs>
           </Toolbar>
         </AppBar>
-        <TabPanel value={value} index={0}>
+        <TabPanel value={value} index={2}>
           <Login />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <SignUp />
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel value={value} index={0}>
           <HomePage />
         </TabPanel>
         <TabPanel value={value} index={3}>
