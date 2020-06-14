@@ -55,7 +55,6 @@ export class TestForm extends Component {
         <Button variant="primary" type="submit">
           Submit
         </Button>
-        {/* <Button onClick={() => console.log(this.props.data)}>Show</Button> */}
       </Form>
     );
   }

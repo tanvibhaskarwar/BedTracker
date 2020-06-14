@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import QuarantineCards from "./QuarantineCards";
 import { Map, CircleMarker, TileLayer } from "react-leaflet";
@@ -8,9 +8,17 @@ import data from "./hospitals";
 export default (props) => (
   <div>
     <Grid container>
-      <Grid item xs={12}>
+      <Grid item xs={6}>
+        <QuarantineCards />
+      </Grid>
+      <Grid item xs={6}>
         <Map
-          style={{ height: "480px", width: "100%" }}
+          style={{
+            height: "100%",
+            width: "100%",
+            marginTop: 15,
+            marginLeft: 10,
+          }}
           zoom={14}
           center={[18.5204, 73.8567]}
         >
@@ -23,10 +31,6 @@ export default (props) => (
             );
           })}
         </Map>
-      </Grid>
-
-      <Grid item xs={6}>
-        <QuarantineCards />
       </Grid>
     </Grid>
   </div>
